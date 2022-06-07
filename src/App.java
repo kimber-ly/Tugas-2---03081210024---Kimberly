@@ -7,22 +7,17 @@ public class App {
         Scanner keyboard = new Scanner(System.in);
 
         balok balok1 = new balok();
-        
-        System.out.print("Masukkan nilai P: ");
+
+        System.out.println("Masukkan nilai P: ");
         balok1.P = keyboard.nextInt();
         
-        System.out.print("Masukkan nilai L: ");
+        System.out.println("Masukkan nilai L: ");
         balok1.L = keyboard.nextInt();
 
-        System.out.print("Masukkan nilai t: ");
+        System.out.println("Masukkan nilai t: ");
         balok1.t = keyboard.nextInt();
 
-        balok1.DisplayVolume(); 
-        for(int j = 1; j <= balok1.HitungVolume(); j++){
-            if(j%2 == 0){
-                System.out.print(j + " ");
-            }
-        }
+        balok1.HitungVolume();
         keyboard.close();
     }
 }
